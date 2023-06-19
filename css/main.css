@@ -24,6 +24,44 @@ footer .social a:hover {
   transition: all 0.5s;
 }
 
+footer.about {
+  height: 10vh;
+  width: 30vw;
+  text-align: center;
+  margin: auto;
+  align-items: baseline;
+  padding-top: 2rem;
+  margin-top: -100px;
+  position: relative;
+}
+footer.about .social a {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+footer.about .social a:hover {
+  color: rgb(255, 149, 0);
+  transition: all 0.5s;
+}
+
+footer.students {
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+  align-items: baseline;
+  padding-top: 2rem;
+}
+footer.students .social a {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  color: rgb(2, 2, 96);
+}
+footer.students .social a:hover {
+  color: rgb(3, 156, 170);
+  transition: all 0.5s;
+}
+
 .navi {
   height: 10vh;
   padding: 0.5rem;
@@ -50,12 +88,13 @@ footer .social a:hover {
   color: rgb(255, 149, 0);
   transition: all 0.4s;
 }
-.navi ul li a:active {
-  color: rgb(3, 156, 170);
+.navi ul li .nav-link__active {
+  color: rgb(255, 149, 0);
 }
 
-body {
-  height: 100vh;
+.home-main {
+  height: 80vh;
+  height: 90vh;
   width: 100%;
   background: linear-gradient(to right, rgba(2, 2, 96, 0.5), rgba(2, 2, 96, 0.3)), url("https://picsum.photos/id/683/600/400");
   background-position: center;
@@ -97,6 +136,81 @@ body {
 .banner .quote-author {
   margin-top: 1rem;
   color: rgb(3, 156, 170);
+}
+
+.about-main {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(2, 2, 96, 0.5), rgba(2, 2, 96, 0.3)), url("https://picsum.photos/id/238/600/400");
+  background-position: center;
+  background-size: cover;
+}
+.about-main .carousel.slide {
+  width: 35vw;
+}
+.about-main .carousel.slide .carousel-indicators button {
+  background-color: rgb(3, 156, 170);
+  height: 10px;
+  width: 40px;
+  padding: 0 0.5rem;
+}
+.about-main .carousel.slide .carousel-inner img {
+  color-interpolation-filters: linearRGB;
+  opacity: 1;
+}
+.about-main .carousel.slide .carousel-inner .carousel-caption {
+  color: rgb(2, 2, 96);
+}
+.about-main .carousel.slide .carousel-inner .carousel-caption h5 {
+  font-size: 2rem;
+}
+.about-main .about-text {
+  color: rgb(255, 149, 0);
+  width: 60vw;
+  text-align: justify;
+  margin-top: 3rem;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  position: absolute;
+  right: -37rem;
+  top: -2rem;
+  background-color: rgb(3, 156, 170);
+  color: rgb(2, 2, 96);
+  border: none;
+}
+.subscribe i {
+  margin-left: 1rem;
+}
+
+/*************************STUDENTS *********************/
+.students-main {
+  height: 194vh;
+  background-color: rgb(2, 2, 96);
+}
+.students-main .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0 3rem;
+}
+.students-main .container .card {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
+.students-main .container .card:hover {
+  transform: scale(1.03);
+  transition: all 0.4s;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

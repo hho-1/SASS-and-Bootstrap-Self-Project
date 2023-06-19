@@ -16,20 +16,22 @@
         }
     }
     ul{
-        
         li{
             display: inline-block;
             a{
                 margin: 0 1rem;
-
+                
                 &:hover{
                     
                     font-weight: 700;
                     color: $tertiary-color;
                     @include transit(0.4s)
                 }
-                &:active{
-                    color: $secondary-color;
+                
+            }
+            .nav-link{
+                &__active{
+                    color: $tertiary-color;
                 }
             }
         }

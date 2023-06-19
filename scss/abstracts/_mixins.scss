@@ -15,3 +15,9 @@
     background-position: center;
     background-size: cover;
 }
+
+@mixin ortala(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

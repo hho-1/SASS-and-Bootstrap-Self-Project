@@ -1,5 +1,7 @@
-body{
-    @include bgImg(100vh, "https://picsum.photos/id/683/600/400");
+
+.home-main{
+    height: 80vh;
+    @include bgImg(90vh, "https://picsum.photos/id/683/600/400");
     color: $light-font-color;
 }
 
@@ -39,4 +41,87 @@ body{
         margin-top: 1rem;
         color: $secondary-color;
     }
+}
+
+//                  ABOUT   ******************* 
+
+
+.about-main{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @include bgImg(90vh, "https://picsum.photos/id/238/600/400");
+    .carousel.slide{
+        width: 35vw;
+        .carousel-indicators{
+            button{
+                background-color: $secondary-color;
+                height: 10px;
+                width: 40px;
+                padding: 0 .5rem;
+            }
+            
+        }
+        .carousel-inner{
+            img{
+                color-interpolation-filters: linearRGB;
+                opacity: 1;
+            }
+            .carousel-caption{
+                color: $primary-color;
+                h5{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .about-text{
+        color: $tertiary-color;
+        width: 60vw;
+        text-align: justify;
+        margin-top: 3rem;
+    }
+}
+.subscribe{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute;
+    right: -37rem;
+    top: -2rem;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: none;
+    i{
+        margin-left: 1rem;
+    }
+}
+
+
+/*************************STUDENTS *********************/
+
+.students-main{
+    height: 194vh;
+    background-color: $primary-color;
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0 3rem;
+        .card{
+            margin-top: 3rem;
+            width: 100%;
+            text-align: center;
+            &:hover{
+                transform: scale(1.03);
+                @include transit(0.4s);
+                cursor: pointer;
+            }
+            
+        }
+    }
+    
 }
