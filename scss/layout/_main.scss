@@ -1,0 +1,42 @@
+body{
+    @include bgImg(100vh, "https://picsum.photos/id/683/600/400");
+    color: $light-font-color;
+}
+
+.banner{
+    height: 80vh;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    .slogan{
+        margin-top: 8rem;
+        border-bottom: 15px solid $tertiary-color;
+        color: $light-font-color;
+        font-size: 2.5rem;
+    }
+    .firma-name{
+        margin-top: 3rem;
+        color: $secondary-color;
+        font-size: 2rem;
+        border-bottom: 5px solid $secondary-color;
+    }
+    .explanation{
+        margin-top: 3rem;
+    }
+    .quote{
+        margin-top: 6rem;
+        width: 40vw;
+        font-style: oblique;
+        color: $tertiary-color;
+    }
+    .quote-author{
+        margin-top: 1rem;
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,39 @@
+
+.navi{
+    height: 10vh;
+    padding: .5rem;
+    align-items: center;
+    font-size: $nav-font-size;
+    font-weight: 600;
+    color: $primary-color;
+
+    .left a{
+        color: $primary-color;
+        
+        &:hover{
+            color: $secondary-color;
+            @include transit(0.4s)
+        }
+    }
+    ul{
+        
+        li{
+            display: inline-block;
+            a{
+                margin: 0 1rem;
+
+                &:hover{
+                    
+                    font-weight: 700;
+                    color: $tertiary-color;
+                    @include transit(0.4s)
+                }
+                &:active{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+
