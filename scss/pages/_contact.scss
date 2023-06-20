@@ -1,0 +1,17 @@
+.contact-main{
+    height: 130vh;
+    #contact{
+        text-align: center;
+        h2{
+            padding-top: 2rem;
+        }
+    }
+    .col-12{
+        button{
+            &:hover{
+                background-color: $primary-color;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

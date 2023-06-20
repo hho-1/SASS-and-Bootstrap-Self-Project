@@ -1,0 +1,199 @@
+.projects-main{
+    height: 100vh;
+    width: 100%;
+
+    .ScriptHeader{
+       color: $primary-color; 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .card-container1 {
+        height: 30vh;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0 12px;
+        perspective: 900px;
+        text-align: center;
+        margin-top: 3rem;
+        
+        .card1 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transition: all 0.6s ease;
+            transform-style: preserve-3d;
+            text-decoration: none;
+
+            .front1, .back1 {
+                position: absolute;
+                background-color: $tertiary-color;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 200px;
+                border-radius: 5px;
+                color: white;
+                box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+                backface-visibility: hidden;
+              }
+          }
+    }
+}
+
+.front1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.back1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  a{
+    text-decoration: none;
+    &:hover{
+        color: $primary-color;
+        font-size: 1rem;
+    }
+  }
+}
+
+.card-container1:hover .card1 {
+  transform: rotateY(180deg);
+}
+
+.back1 {
+  transform: rotateY(180deg);
+}
+.projects social{
+    
+        color: $primary-color;
+
+}
+
+
+.container-drop{
+    position: relative;
+    left: 35vw;
+    top: -35vh;
+}
+
+.drip {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    border: 2px solid red;
+  }
+  .drip:before {
+    position: absolute;
+    left: 92.5px;
+    top: 0;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    opacity: 0;
+    animation: drip 4s ease infinite;
+  }
+  .drip:after {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: solid 4px $secondary-color;
+    border-radius: 50%;
+    opacity: 0;
+    animation: splash 4s ease infinite;
+  }
+  
+  @keyframes drip {
+    10% {
+      top: 0;
+      opacity: 1;
+      animation-timing-function: cubic-bezier(0.24, 0, 0.76, 0.14);
+    }
+    25% {
+      opacity: 1;
+      top: 200px;
+      animation-timing-function: ease-out;
+      width: 15px;
+      height: 15px;
+      left: 92.5px;
+    }
+    30% {
+      opacity: 1;
+      top: 160px;
+      width: 5px;
+      height: 5px;
+      animation-timing-function: ease-in;
+      left: 97.5px;
+    }
+    33% {
+      top: 200px;
+      opacity: 0;
+      animation-timing-function: ease-out;
+      left: 97.5px;
+    }
+    33.001% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes splash {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      bottom: 50px;
+      left: 100px;
+      opacity: 0;
+      width: 0px;
+      height: 0px;
+    }
+    25.001% {
+      opacity: 1;
+    }
+    33% {
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      width: 200px;
+      height: 100px;
+    }
+    33.001% {
+      bottom: 50px;
+      left: 100px;
+      opacity: 1;
+      width: 0px;
+      height: 0px;
+    }
+    43% {
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      width: 200px;
+      height: 100px;
+    }
+    43.001% {
+      opacity: 0;
+    }
+  }
+  
+  .rt-container{
+    
+  }

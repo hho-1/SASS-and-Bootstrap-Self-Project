@@ -61,3 +61,48 @@ footer.students{
     }
     
 }
+
+footer.projects{
+    height: 10vh;
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+    align-items: baseline;
+    padding-top: 2rem;
+    
+    position: relative;
+    .social{
+        a{
+            padding: 0 .5rem;
+            text-decoration: none;
+            color: $primary-color;
+            &:hover{
+                color: $tertiary-color;
+                @include transit(0.5s);
+            }
+        }
+    }
+    
+}
+footer.contact{
+    height: 10vh;
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+    align-items: baseline;
+    padding-top: 2rem;
+    
+    position: relative;
+    .social{
+        a{
+            padding: 0 .5rem;
+            text-decoration: none;
+            color: $primary-color;
+            &:hover{
+                color: $tertiary-color;
+                @include transit(0.5s);
+            }
+        }
+    }
+    
+}

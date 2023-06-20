@@ -1,6 +1,7 @@
 div#loader {
   position: relative;
-  margin-top: 5vh;
+  
+  margin-top: -25vh;
   text-align: center;
   width: 100px;
   height: 100px;
@@ -9,6 +10,7 @@ div#loader {
   
 
   span.ball {
+
     position: absolute;
     background: $tertiary-color;
     width: 24px;
