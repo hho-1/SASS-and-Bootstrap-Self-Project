@@ -14,6 +14,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    
     
 
     .slogan{
@@ -47,14 +49,16 @@
 
 
 .about-main{
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: navy;
     
-    @include bgImg(90vh, "https://picsum.photos/id/238/600/400");
+    
+    //@include bgImg(90vh, "https://picsum.photos/id/238/600/400");
     .carousel.slide{
         width: 35vw;
         .carousel-indicators{
@@ -69,7 +73,7 @@
         .carousel-inner{
             img{
                 color-interpolation-filters: linearRGB;
-                opacity: 1;
+                opacity: 0.8;
             }
             .carousel-caption{
                 color: $primary-color;

@@ -1,0 +1,94 @@
+
+  
+  #plane {
+    position: absolute;
+    left: 7vw;
+    top: 180%;
+    transform: translate(-180%, 100%);
+    animation: plane 10s linear infinite forwards;
+    
+  }
+  
+  #plane:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    bottom: -170px;
+    width: 3px;
+    background: $secondary-color;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    height: 200px;
+  }
+  
+  #plane:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: 8px;
+    bottom: -190px;
+    width: 3px;
+    background: $tertiary-color;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, 0) 100%);
+    height: 200px;
+  }
+  
+  
+  
+  @keyframes plane {
+    0% {
+      transform: translateY(20vh);
+    }
+    
+    100% {
+      transform: translateY(-200vh);
+    }
+  }
+
+  
+  #plane2 {
+    position: absolute;
+    left: 91vw;
+    top: 180%;
+    transform: translate(-180%, 100%);
+    animation: plane2 10s linear 3s infinite forwards;
+    
+  }
+  
+  #plane2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    bottom: -170px;
+    width: 3px;
+    background: $secondary-color;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    height: 200px;
+  }
+  
+  #plane2:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: 8px;
+    bottom: -190px;
+    width: 3px;
+    background: $tertiary-color;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, 0) 100%);
+    height: 200px;
+  }
+  
+  
+  
+  @keyframes plane2 {
+    0% {
+      transform: translateY(20vh);
+    }
+    
+    100% {
+      transform: translateY(-200vh);
+    }
+  }
+  
+  
