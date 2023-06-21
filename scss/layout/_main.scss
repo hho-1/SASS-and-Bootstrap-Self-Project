@@ -55,12 +55,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: navy;
+    background-color: rgb(4, 4, 163);
     
     
     //@include bgImg(90vh, "https://picsum.photos/id/238/600/400");
     .carousel.slide{
-        width: 35vw;
+        width: 50vw;
+        height: 40vh;
         .carousel-indicators{
             button{
                 background-color: $secondary-color;

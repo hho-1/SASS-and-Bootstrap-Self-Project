@@ -372,10 +372,11 @@ footer.contact .social a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: navy;
+  background-color: rgb(4, 4, 163);
 }
 .about-main .carousel.slide {
-  width: 35vw;
+  width: 50vw;
+  height: 40vh;
 }
 .about-main .carousel.slide .carousel-indicators button {
   background-color: rgb(3, 156, 170);
