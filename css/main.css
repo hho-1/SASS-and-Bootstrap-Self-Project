@@ -526,7 +526,7 @@ footer.contact .social a:hover {
 .container-drop {
   position: relative;
   left: 35vw;
-  top: -35vh;
+  top: -5vh;
 }
 
 .drip {
@@ -537,7 +537,6 @@ footer.contact .social a:hover {
   justify-content: center;
   margin: auto;
   position: relative;
-  border: 2px solid red;
 }
 
 .drip:before {
@@ -640,6 +639,9 @@ footer.contact .social a:hover {
   43.001% {
     opacity: 0;
   }
+}
+.rt-container {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

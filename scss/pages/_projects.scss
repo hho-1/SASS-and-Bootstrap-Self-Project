@@ -80,7 +80,7 @@
 .container-drop{
     position: relative;
     left: 35vw;
-    top: -35vh;
+    top: -5vh;
 }
 
 .drip {
@@ -91,7 +91,7 @@
     justify-content: center;
     margin: auto;
     position: relative;
-    border: 2px solid red;
+    
   }
   .drip:before {
     position: absolute;
@@ -195,5 +195,5 @@
   }
   
   .rt-container{
-    
+    text-align: center;
   }
