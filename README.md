@@ -6,6 +6,6 @@ This 5-page website project has been totally self-designed. Following topics hav
 - SASS
 - Bootstrap Elements
 - CSS Flex and Grid
-- Media Queries
+- Flipcards
 - CSS Animations
 
